@@ -1,0 +1,113 @@
+@font-face {
+  font-family: neuB;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: neuB;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #efeae3;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 2.2vw;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2vw;
+}
+
+#navMenu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+#navMenu h4 {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: neuB;
+  padding: 10px 23px;
+  border: 1px solid rgba(0, 0, 0, 0.303);
+  border-radius: 50px;
+  position: relative;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/*nav menu animation*/
+#navMenu h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%; /*may not be used later on as the overflow will be hidden*/
+  transition: all ease 0.5s;
+}
+
+#navMenu h4:hover::after {
+  bottom: 0%;
+  border-radius: 50px;
+}
+
+#navMenu h4 a {
+  text-decoration: none;
+  position: relative;
+  color: rgb(0, 0, 0);
+  z-index: 9;
+}
+
+#navMenu h4:hover a {
+  color: white;
+  overflow: hidden;
+}
+
+#center {
+  height: 78vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2.2vw;
+  border-bottom: 5px solid rgb(0, 0, 0, 0.303);
+}
+
+#left p {
+  width: 28vw;
+  font-size: 2vw;
+  font-weight: 900;
+  line-height: 2vw;
+  /* background-color: #fff; */
+}
+
+#right h1 {
+  font-size: 10vw;
+  text-align: right;
+  line-height: 8vw;
+}
+
+#page1 video {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 50px;
+}
