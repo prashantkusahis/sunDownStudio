@@ -89,7 +89,7 @@ nav {
   align-items: flex-end;
   justify-content: space-between;
   padding: 2.2vw;
-  border-bottom: 5px solid rgb(0, 0, 0, 0.303);
+  border-bottom: 2px solid rgb(0, 0, 0, 0.303);
 }
 
 #left p {
@@ -110,4 +110,55 @@ nav {
   width: 100%;
   border-radius: 20px;
   margin-top: 50px;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 8vw 0;
+  /* background-color: rebeccapurple; */
+}
+
+#movingTexts {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#movingTexts::-webkit-scrollbar {
+  display: none;
+}
+
+#movingTexts h1 {
+  font-size: 9vw;
+  text-transform: uppercase;
+  /* background-color: aqua; */
+  display: inline-block;
+  letter-spacing: -50%;
+}
+
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: textHoriScroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.orangeRedDot {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #fe330a;
+  margin: 1vw 2vw;
+}
+
+@keyframes textHoriScroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
 }
