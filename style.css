@@ -233,7 +233,56 @@ nav {
 }
 
 #page3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #fff;
+  padding: 4vw 0;
+}
+
+.elem {
+  height: 125px;
+  width: 100%;
+  position: relative;
+  /* border-top: 1px solid #000; */
+  border-bottom: 1px solid rgb(0, 0, 0, 0.303);
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  overflow: hidden;
+}
+
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #ff9831;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.elem:hover .overlay {
+  top: 0;
+}
+
+.elem h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+
+#elemContainer {
+}
+
+#fixedImage {
+  height: 30vw;
+  width: 24vw;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  top: 20%;
+  display: none;
 }
