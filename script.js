@@ -29,3 +29,23 @@ elem2.addEventListener("mouseenter", () => {
   let image = elem2.getAttribute("imageUrl");
   fixI.style.backgroundImage = `url(${image})`;
 });
+elem3.addEventListener("mouseenter", () => {
+  let image = elem3.getAttribute("imageUrl");
+  fixI.style.backgroundImage = `url(${image})`;
+});
+elem4.addEventListener("mouseenter", () => {
+  let image = elem4.getAttribute("imageUrl");
+  fixI.style.backgroundImage = `url(${image})`;
+});
+elem5.addEventListener("mouseenter", () => {
+  let image = elem5.getAttribute("imageUrl");
+  fixI.style.backgroundImage = `url(${image})`;
+});
+elem6.addEventListener("mouseenter", () => {
+  let image = elem6.getAttribute("imageUrl");
+  fixI.style.backgroundImage = `url(${image})`;
+});
+elem7.addEventListener("mouseenter", () => {
+  let image = elem7.getAttribute("imageUrl");
+  fixI.style.backgroundImage = `url(${image})`;
+});
