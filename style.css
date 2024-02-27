@@ -272,8 +272,7 @@ nav {
   z-index: 9;
 }
 
-#elemContainer {
-}
+
 
 #fixedImage {
   height: 30vw;
@@ -285,4 +284,6 @@ nav {
   left: 50%;
   top: 20%;
   display: none;
+  background-size: cover;
+  background-position: center;
 }
